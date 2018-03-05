@@ -1,6 +1,6 @@
 #include "i2cScan.h"
 #include <Wire.h>
-
+//Bonjour
 void i2cScan(){
       int i2c[128];
       byte error, address;
@@ -20,6 +20,7 @@ void i2cScan(){
              SerialScan.print(".");
           }
           if(address%32 == 0) SerialScan.println("");    
+      }
       
       SerialScan.println("");
       if( nDevices==0 ){
